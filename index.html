@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div id="alarm-card" class="alarm-wrapper">
+      <h1 id="display-clock">00:00:00</h1>
+
+      <div class="controls">
+        <input type="time" id="alarm-input" />
+        <button id="set-btn">Budilnikni o'rnatish</button>
+      </div>
+
+      <p id="message"></p>
+    </div>
+
+    <div id="alarm-modal" class="modal-overlay hidden">
+      <div class="modal-content">
+        <div class="bell-icon">🔔</div>
+        <h2>Vaqt bo'ldi!</h2>
+        <h1 id="modal-time"></h1>
+        <button id="modal-stop-btn">To'xtatish</button>
+      </div>
+    </div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

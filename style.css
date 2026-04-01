@@ -1,0 +1,90 @@
+.hidden {
+  display: none !important;
+}
+.blue {
+  color: blue;
+}
+.alarm-wrapper {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+  margin: 50px auto;
+  font-family: sans-serif;
+}
+#display-clock {
+  font-size: 4rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+input {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 1.2rem;
+  outline: none;
+}
+button {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: #007aff;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  width: 300px;
+}
+.bell-icon {
+  font-size: 50px;
+  display: inline-block;
+  animation: shake 0.5s infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(15deg);
+  }
+  75% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+#modal-stop-btn {
+  background: #ff3b30;
+  margin-top: 20px;
+  width: 100%;
+}
