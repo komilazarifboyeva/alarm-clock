@@ -1,11 +1,11 @@
-const alarmCard = document.getElementById("alarm-card");
-const displayClock = document.getElementById("display-clock");
-const alarmInput = document.getElementById("alarm-input");
-const setBtn = document.getElementById("set-btn");
-const message = document.getElementById("message");
-const alarmModal = document.getElementById("alarm-modal");
-const modalStopBtn = document.getElementById("modal-stop-btn");
-const modalTimeText = document.getElementById("modal-time");
+const alarmCard = document.getElementById("alarm-card")
+const displayClock = document.getElementById("display-clock")
+const alarmInput = document.getElementById("alarm-input")
+const setBtn = document.getElementById("set-btn")
+const message = document.getElementById("message")
+const alarmModal = document.getElementById("alarm-modal")
+const modalStopBtn = document.getElementById("modal-stop-btn")
+const modalTimeText = document.getElementById("modal-time")
 
 let alarmTime = null;
 let alarmSound = new Audio("alarm.mp3");
