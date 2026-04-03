@@ -7,16 +7,16 @@ const alarmModal = document.getElementById("alarm-modal")
 const modalStopBtn = document.getElementById("modal-stop-btn")
 const modalTimeText = document.getElementById("modal-time")
 
-let alarmTime = null;
-let alarmSound = new Audio("alarm.mp3");
-alarmSound.loop = true;
-let isAlarmRinging = false;
+let alarmTime = null
+let alarmSound = new Audio("alarm.mp3")
+alarmSound.loop = true
+let isAlarmRinging = false
 
 setInterval(() => {
-  let date = new Date();
-  let hours = date.getHours() < 10 ? "0" + date.getHours() : date.getHours();
-  let minutes = date.getMinutes() < 10 ? "0" + date.getMinutes() : date.getMinutes();
-  let seconds = date.getSeconds() < 10 ? "0" + date.getSeconds() : date.getSeconds();
+  let date = new Date()
+  let hours = date.getHours() < 10 ? "0" + date.getHours() : date.getHours()
+  let minutes = date.getMinutes() < 10 ? "0" + date.getMinutes() : date.getMinutes()
+  let seconds = date.getSeconds() < 10 ? "0" + date.getSeconds() : date.getSeconds()
 
   displayClock.textContent = `${hours}:${minutes}:${seconds}`;
   let currentTimeShort = `${hours}:${minutes}`;
