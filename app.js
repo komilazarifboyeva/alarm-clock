@@ -22,14 +22,14 @@ setInterval(() => {
   let currentTimeShort = `${hours}:${minutes}`
 
   if (alarmTime === currentTimeShort && !isAlarmRinging) {
-    ringAlarm();
+    ringAlarm()
   }
 }, 1000);
 
 setBtn.addEventListener("click", () => {
   if (alarmInput.value) {
-    alarmTime = alarmInput.value;
-    isAlarmRinging = false;
+    alarmTime = alarmInput.value
+    isAlarmRinging = false
     message.innerText = `Budilnik ${alarmTime} ga o'rnatildi!`;
     message.classList.add("blue")
   } else {
