@@ -18,8 +18,8 @@ setInterval(() => {
   let minutes = date.getMinutes() < 10 ? "0" + date.getMinutes() : date.getMinutes()
   let seconds = date.getSeconds() < 10 ? "0" + date.getSeconds() : date.getSeconds()
 
-  displayClock.textContent = `${hours}:${minutes}:${seconds}`;
-  let currentTimeShort = `${hours}:${minutes}`;
+  displayClock.textContent = `${hours}:${minutes}:${seconds}`
+  let currentTimeShort = `${hours}:${minutes}`
 
   if (alarmTime === currentTimeShort && !isAlarmRinging) {
     ringAlarm();
