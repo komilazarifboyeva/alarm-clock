@@ -39,15 +39,15 @@ setBtn.addEventListener("click", () => {
 function ringAlarm() {
   isAlarmRinging = true; 
   alarmModal.classList.remove("hidden")
-  modalTimeText.innerText = `${alarmTime}`;
-  message.innerText = "";
+  modalTimeText.innerText = `${alarmTime}`
+  message.innerText = ""
   alarmSound.play()
 }
 modalStopBtn.addEventListener("click", () => {
-  isAlarmRinging = false; 
-  alarmTime = null;
-  alarmModal.classList.add("hidden");
-  alarmInput.value = "";
+  isAlarmRinging = false
+  alarmTime = null
+  alarmModal.classList.add("hidden")
+  alarmInput.value = ""
   alarmSound.pause();
-  alarmSound.currentTime = 0;
+  alarmSound.currentTime = 0
 });
