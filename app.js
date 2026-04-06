@@ -30,15 +30,15 @@ setBtn.addEventListener("click", () => {
   if (alarmInput.value) {
     alarmTime = alarmInput.value
     isAlarmRinging = false
-    message.innerText = `Budilnik ${alarmTime} ga o'rnatildi!`;
+    message.innerText = `Budilnik ${alarmTime} ga o'rnatildi!`
     message.classList.add("blue")
   } else {
-    alert("Vaqtni kiriting!");
+    alert("Vaqtni kiriting!")
   }
 });
 function ringAlarm() {
   isAlarmRinging = true; 
-  alarmModal.classList.remove("hidden");
+  alarmModal.classList.remove("hidden")
   modalTimeText.innerText = `${alarmTime}`;
   message.innerText = "";
   alarmSound.play()
