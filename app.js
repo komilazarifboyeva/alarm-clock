@@ -48,6 +48,6 @@ modalStopBtn.addEventListener("click", () => {
   alarmTime = null
   alarmModal.classList.add("hidden")
   alarmInput.value = ""
-  alarmSound.pause();
+  alarmSound.pause()
   alarmSound.currentTime = 0
 });
