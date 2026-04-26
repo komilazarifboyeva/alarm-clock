@@ -1,5 +1,5 @@
-const alarmCard = document.getElementById("alarm-card");
-const displayClock = document.getElementById("display-clock");
+const alarmCard = document.getElementById("alarm-card")
+const displayClock = document.getElementById("display-clock")
 const alarmInput = document.getElementById("alarm-input");
 const setBtn = document.getElementById("set-btn");
 const message = document.getElementById("message");;
